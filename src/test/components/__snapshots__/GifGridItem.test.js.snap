@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de gifexpert Debe de mostrar <GifGridItem /> correctamente 1`] = `
+<div
+  className="card animate__animated animate__flipInX"
+>
+  <img
+    alt="Hola soy Goku"
+    src="https://media.tenor.com/images/8f91571e84d8e808fa519529408c20a1/tenor.gif"
+  />
+  <p>
+     
+    Hola soy Goku
+     
+  </p>
+</div>
+`;
