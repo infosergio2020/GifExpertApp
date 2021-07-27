@@ -7,15 +7,18 @@ export const AddCategory = ({setCategories}) => {
 
     const handleInputChange = (e)=>{
         setInputValue( e.target.value );
+        console.log('handleInputChange llamado');
     }
 
     const handleSubmit = (e)=>{
+        console.log('hadleSubmit',inputValue);
         e.preventDefault();
+        
         if(inputValue.trim().length > 2 ){
             setCategories( cats => [inputValue,...cats]);
             setInputValue('');
         }else {
-            alert('Debe tener mas de 2 caracteres');
+            // alert('Debe tener mas de 2 caracteres');
             setInputValue('');
         }
         
@@ -23,6 +26,7 @@ export const AddCategory = ({setCategories}) => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p> {inputValue} </p>
             <input className="input input-background" 
                    type="text"
                    value={inputValue}
