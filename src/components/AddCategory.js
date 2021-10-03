@@ -21,7 +21,6 @@ export const AddCategory = ({setCategories}) => {
             // alert('Debe tener mas de 2 caracteres');
             setInputValue('');
         }
-        
     }
 
     return (
